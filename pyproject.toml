@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scalably-example-mcp"
+version = "1.0.0"
+description = "Example MCP server from Scalably. Replace this line."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Scalably", email = "hello@scalably.io" }]
+keywords = ["mcp", "model-context-protocol", "scalably"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License"]
+dependencies = ["mcp>=1.6.0,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+example-mcp = "scalably_example_mcp.server:main"
+
+[project.urls]
+Homepage = "https://scalably.io/mcp/example-mcp"
+Repository = "https://github.com/scalably-io/example-mcp"
+Issues = "https://github.com/scalably-io/example-mcp/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/scalably_example_mcp"]
