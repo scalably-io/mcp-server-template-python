@@ -12,7 +12,7 @@ license = { text = "MIT" }
 authors = [{ name = "Scalably", email = "hello@scalably.io" }]
 keywords = ["mcp", "model-context-protocol", "scalably"]
 classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License"]
-dependencies = ["mcp>=1.6.0,<2"]
+dependencies = ["mcp>=1.6.0,<3"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8"]
