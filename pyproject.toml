@@ -18,7 +18,7 @@ dependencies = ["mcp>=1.6.0,<2"]
 dev = ["pytest>=8"]
 
 [project.scripts]
-example-mcp = "scalably_example_mcp.server:main"
+scalably-example-mcp = "scalably_example_mcp.server:main"
 
 [project.urls]
 Homepage = "https://scalably.io/mcp/example-mcp"
